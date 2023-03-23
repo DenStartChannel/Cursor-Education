@@ -426,6 +426,7 @@ body {
 	border: none;
 	background: #4a7eff;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 /* sixth modal */
@@ -484,4 +485,6 @@ body {
 	font-size: 14px;
 	font-weight: 500;
 	padding: 10px 15px;
+	cursor: pointer;
+	appearance: none;
 }
