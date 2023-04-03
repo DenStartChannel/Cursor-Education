@@ -1,0 +1,68 @@
+body {
+	background-color: #303030;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #666;
+	border-radius: 5px;
+	border-style: hidden;
+	box-shadow: 0 0 0 1px #666;
+}
+
+.table__name1,
+.table__name2,
+.table__name3,
+.table__date3 {
+	color: #fff;
+	padding-right: 200px;
+}
+
+.table__date1 {
+	color: #fff;
+	padding-right: 360px;
+}
+
+.table__date2 {
+	color: #fff;
+	padding-right: 340px;
+}
+
+td {
+	border-bottom: 1px solid #666;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.table__file1,
+.table__file2,
+.table__file3,
+.table__file4,
+.table__file5,
+.table__file6,
+.table__file7,
+.table__file8,
+.table__file9 {
+	color: #fff;
+}
+
+.table__data1,
+.table__data2,
+.table__data3,
+.table__data4,
+.table__data5,
+.table__data6,
+.table__data7,
+.table__data8,
+.table__data9 {
+	color: #5e5c5c;
+}
+.tablediv__one,
+.tablediv__two {
+	margin-bottom: 50px;
+}
+
+.search {
+	background-color: #5e5c5c;
+	border: none;
+}
