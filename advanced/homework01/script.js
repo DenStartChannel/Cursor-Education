@@ -2,21 +2,22 @@ const croissant = 15.678;
 const meat = 123.965;
 const potato = 90.2345;
 
-let sum = 0;
+const sum = 0;
 
 sum = croissant + meat + potato;
 
-let x = Math.round(sum / 100) * 100;
+const x = Math.round(sum / 100) * 100;
 
 function getRandomInt(max) {
 	return Math.floor(Math.random() * max);
 }
 
-let discont = Math.round((sum / getRandomInt(100)) * 100) / 100;
-let real_price = Math.round((sum / 2) * 100) / 100;
-let income = real_price - discont;
+const discont = Math.round((sum / getRandomInt(100)) * 100) / 100;
+const real_price = Math.round((sum / 2) * 100) / 100;
+const income = real_price - discont;
+const average = Math.round((sum / 3) * 100) / 100;
 
-let text = `Ціна круасанна: ${croissant} \nЦіна м'яса: ${meat}\nЦіна картоплі: ${potato}\nМаксимальне число: ${Math.max(
+const text = `Ціна круасанна: ${croissant} \nЦіна м'яса: ${meat}\nЦіна картоплі: ${potato}\nМаксимальне число: ${Math.max(
 	croissant,
 	meat,
 	potato
@@ -30,8 +31,6 @@ let text = `Ціна круасанна: ${croissant} \nЦіна м'яса: ${me
 		: "false, число завкругилося в більшу сторону"
 }\n ${x % 2 != 0 ? "число є не парним" : "число є парним"}\n ${
 	500 - sum
-} сума решти, при оплаті всіх товарів\nСереднє значення цін: ${
-	Math.round((sum / 3) * 100) / 100
-}\n Чистий дохід: ${income}
+} сума решти, при оплаті всіх товарів\nСереднє значення цін: ${average}\n Чистий дохід: ${income}
 `;
 console.log(text);
