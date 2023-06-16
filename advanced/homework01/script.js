@@ -2,7 +2,7 @@ const croissant = 15.678;
 const meat = 123.965;
 const potato = 90.2345;
 
-const sum = 0;
+let sum = 0;
 
 sum = croissant + meat + potato;
 
