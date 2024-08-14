@@ -1,0 +1,185 @@
+.upper {
+	margin: 100px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(../assets/space.jpeg);
+	width: 50vw;
+	padding: 20%;
+	gap: 30px;
+	cursor: pointer;
+}
+
+.burger_upper,
+.burger_down {
+	height: 50px;
+	width: 600px;
+	background-color: #555;
+	background: rgb(153, 159, 159);
+	border: 1px solid #fff;
+	border-radius: 60px;
+}
+.burger_mid {
+	height: 50px;
+	width: 600px;
+	background-color: #555;
+	background: rgb(153, 159, 159);
+	border: 1px solid #fff;
+	border-radius: 60px;
+}
+.square {
+	height: 100%;
+	background: rgb(0, 0, 0);
+	margin-left: 30px;
+	width: 10vh;
+}
+
+.square_mid {
+	height: 100%;
+	background: rgb(0, 0, 0);
+	margin-left: 40px;
+	width: 10vh;
+}
+
+.burger_down,
+.burger_mid,
+.burger_upper {
+	transition: all 3s cubic-bezier(0.79, -0.22, 0.13, 1.08) 0s;
+}
+
+.upper:hover .burger_upper {
+	box-shadow: 0 0 20px 10px#05fe68;
+	transform: translateY(45px);
+	opacity: 0;
+}
+
+.upper:hover .burger_mid {
+	box-shadow: 0px 0px 20px 10px#000dff;
+	transform: rotateZ(45deg) translateY(45px);
+	background-color: #2939c9;
+}
+
+.upper:hover .burger_down {
+	transform: translateY(-45px) rotateZ(-45deg);
+	background-color: #ff0000;
+	box-shadow: 0px 0px 20px 10px#ff0000;
+}
+
+.down {
+	margin: 100px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	padding: 20%;
+	box-shadow: 20px #555;
+}
+.ball_left,
+.ball_1,
+.ball_2,
+.ball_3,
+.ball_3,
+.ball_4,
+.ball_5,
+.ball_right {
+	height: 70px;
+	width: 70px;
+	border-radius: 200px;
+	cursor: pointer;
+}
+
+.ball_left {
+	background: rgb(64, 105, 222);
+	background: radial-gradient(
+		circle,
+		rgba(64, 105, 222, 1) 87%,
+		rgba(0, 212, 255, 1) 100%,
+		rgba(2, 0, 36, 1) 100%
+	);
+}
+
+.ball_1 {
+	background: rgb(64, 105, 222);
+	background: linear-gradient(
+		90deg,
+		rgba(64, 105, 222, 1) 58%,
+		rgba(0, 255, 252, 1) 87%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+.ball_2 {
+	background: rgb(23, 217, 192);
+	background: linear-gradient(
+		270deg,
+		rgba(23, 217, 192, 1) 58%,
+		rgba(0, 255, 196, 1) 92%,
+		rgba(5, 233, 188, 0.5551470588235294) 100%
+	);
+}
+
+.ball_3 {
+	background: rgb(5, 233, 188);
+	background: linear-gradient(
+		270deg,
+		rgba(5, 233, 188, 1) 58%,
+		rgba(6, 210, 128, 1) 92%,
+		rgba(6, 221, 160, 0.5551470588235294) 100%
+	);
+}
+.ball_4 {
+	background: rgb(150, 153, 185);
+	background: linear-gradient(
+		270deg,
+		rgba(150, 153, 185, 1) 100%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+.ball_5 {
+	background: rgb(134, 136, 163);
+	background: linear-gradient(
+		270deg,
+		rgba(134, 136, 163, 1) 100%,
+		rgba(134, 136, 163, 1) 100%
+	);
+}
+.ball_right {
+	background: rgb(114, 116, 140);
+	background: linear-gradient(
+		270deg,
+		rgba(114, 116, 140, 1) 100%,
+		rgba(114, 116, 140, 1) 100%
+	);
+}
+.down:hover .ball_left {
+	animation: 1s linear 0s infinite alternate newtonLeft;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.down:hover .ball_right {
+	animation: 1s linear 1s infinite alternate newtonRight;
+}
+
+@keyframes newtonLeft {
+	0% {
+		/* pushes the sun down past the viewport */
+		transform: translateY(-100px) translateX(-150px);
+	}
+	50% {
+		/* returns the sun to its default position */
+		transform: translateX(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes newtonRight {
+	0% {
+		/* pushes the sun down past the viewport */
+		transform: translateY(-100px) translateX(150px);
+	}
+	50% {
+		/* returns the sun to its default position */
+		transform: translateX(0);
+		transform: translateY(0);
+	}
+}
