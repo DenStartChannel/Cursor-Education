@@ -11,27 +11,28 @@ const x = Math.round(sum / 100) * 100;
 function getRandomInt(max) {
 	return Math.floor(Math.random() * max);
 }
-
-const discont = Math.round((sum / getRandomInt(100)) * 100) / 100;
+let discont = (getRandomInt(100) / x) * 100;
 const real_price = Math.round((sum / 2) * 100) / 100;
 const income = real_price - discont;
 const average = Math.round((sum / 3) * 100) / 100;
 const change = 500 - sum;
 
-const text = `Ціна круасанна: ${croissant} \nЦіна м'яса: ${meat}\nЦіна картоплі: ${potato}\nМаксимальне число: ${Math.max(
+const text = `Ціна круасанна: ${croissant} <br> \nЦіна м'яса: ${meat} <br>\nЦіна картоплі: ${potato} <br>\nМаксимальне число: ${Math.max(
 	croissant,
 	meat,
 	potato
-)}\nМінімальне число: ${Math.min(
+)}\n <br> Мінімальне число: ${Math.min(
 	croissant,
 	meat,
 	potato
-)}\nСума всіх чисел: ${sum}\nЗавкруглена сума всіх чисел: ${x}\n ${
+)}\n <br> Сума всіх чисел: ${sum}\n <br>Завкруглена сума всіх чисел: ${x}\n <br> ${
 	x < 300
 		? "true, число завкруглилося в меншу сторону"
 		: "false, число завкругилося в більшу сторону"
-}\n ${
+}\n <br> ${
 	x % 2 != 0 ? "число є не парним" : "число є парним"
-}\n ${change} сума решти, при оплаті всіх товарів\nСереднє значення цін: ${average}\n Чистий дохід: ${income}
+}\n <br> ${change} сума решти, при оплаті всіх товарів\n <br>Середнє значення цін: ${average}\n <br> Чистий дохід: ${income}
+ Знижка вирохована:${discont} 
 `;
 console.log(text);
+document.writeln(text);

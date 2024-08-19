@@ -1,0 +1,35 @@
+.main {
+	background-image: url(../assets/Hero-Image-V2-1.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	font-size: 100px;
+}
+
+.key {
+	border: 0.4rem solid black;
+	border-radius: 0.5rem;
+	margin: 4rem;
+	font-size: 1.5rem;
+	padding: 1rem;
+	transition: all 0.07s ease;
+	width: 10rem;
+	text-align: center;
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 0 0 0.5rem black;
+	font-family: roboto;
+}
+
+.active {
+	transform: scale(1.1);
+	border-color: blue;
+	box-shadow: 0 0 1rem blue;
+	color: blue;
+}
