@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Star Wars API</h1>
+			<input
+				type="number"
+				id="filmNumber"
+				placeholder="Введіть номер фільму"
+				min="1" />
+			<button id="infoButton" onclick="getCharacters()">
+				Отримати інформацію
+			</button>
+			<button id="wookieeButton" onclick="translateToWookiee()">
+				Перекласти на Вукийську
+			</button>
+			<button id="planetsButton" onclick="getPlanets()">
+				Показати планети
+			</button>
+			<button id="nextPlanetsButton" onclick="loadNextPlanets()">
+				Наступні планети
+			</button>
+			<div id="characters"></div>
+			<div id="planets"></div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>

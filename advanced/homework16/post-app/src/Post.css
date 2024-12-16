@@ -1,0 +1,52 @@
+/* Post.css */
+.post {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px 0;
+	max-width: 600px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+	display: flex;
+	align-items: center;
+}
+
+.post-author-photo {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-right: 12px;
+}
+
+.post-author-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.post-author-name {
+	font-weight: bold;
+}
+
+.post-author-nickname {
+	color: #555;
+}
+
+.post-content {
+	margin-top: 12px;
+}
+
+.post-image {
+	margin-top: 12px;
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.post-date {
+	margin-top: 12px;
+	color: #888;
+	font-size: 14px;
+}
